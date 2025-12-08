@@ -1,0 +1,18 @@
+import React from "react";
+
+export const metadata = {
+  title: "Next + Supabase Example"
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="id">
+      <body style={{ fontFamily: "system-ui, sans-serif", padding: 24 }}>
+        <header style={{ marginBottom: 24 }}>
+          <h1>Next + Supabase (contoh)</h1>
+        </header>
+        <main>{children}</main>
+      </body>
+    </html>
+  );
+}
